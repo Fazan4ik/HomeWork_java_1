@@ -1,0 +1,554 @@
+Index: src/HomeTask/task1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task1 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task1.java b/src/HomeTask/task1.java
+--- a/src/HomeTask/task1.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task1.java	(date 1724754205377)
+@@ -1,4 +1,10 @@
+ package HomeTask;
+ 
+ public class task1 {
++    public static void main(String[] args) {
++        System.out.println("\"Your time is limited,");
++        System.out.println("\tso don’t waste it");
++        System.out.println("\t\tliving someone else’s life\"");
++        System.out.println("\t\t\tSteve Jobs");
++    }
+ }
+Index: src/HomeTask/task5.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task5 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task5.java b/src/HomeTask/task5.java
+--- a/src/HomeTask/task5.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task5.java	(date 1724756154629)
+@@ -1,4 +1,22 @@
+ package HomeTask;
+-
++import java.util.Scanner;
+ public class task5 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть номер місяця (1-12):");
++        int month = scanner.nextInt();
++
++        if (month < 1 || month > 12) {
++            System.out.println("Помилка: невірний номер місяця.");
++        } else if (month == 12 || month == 1 || month == 2) {
++            System.out.println("Winter");
++        } else if (month >= 3 && month <= 5) {
++            System.out.println("Spring");
++        } else if (month >= 6 && month <= 8) {
++            System.out.println("Summer");
++        } else {
++            System.out.println("Autumn");
++        }
++    }
+ }
+Index: src/HomeTask/task6.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task6 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task6.java b/src/HomeTask/task6.java
+--- a/src/HomeTask/task6.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task6.java	(date 1724756247755)
+@@ -1,4 +1,28 @@
+ package HomeTask;
++import java.util.Scanner;
+ 
+ public class task6 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть кількість метрів:");
++        double meters = scanner.nextDouble();
++
++        System.out.println("Оберіть одиницю виміру (1 - милі, 2 - дюйми, 3 - ярди):");
++        int choice = scanner.nextInt();
++
++        switch (choice) {
++            case 1:
++                System.out.println(meters + " метрів = " + meters * 0.000621371192 + " миль");
++                break;
++            case 2:
++                System.out.println(meters + " метрів = " + meters * 39.3700787 + " дюймів");
++                break;
++            case 3:
++                System.out.println(meters + " метрів = " + meters * 1.0936133 + " ярдів");
++                break;
++            default:
++                System.out.println("Помилка: невірний вибір.");
++        }
++    }
+ }
+Index: src/HomeTask/task4.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task4 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task4.java b/src/HomeTask/task4.java
+--- a/src/HomeTask/task4.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task4.java	(date 1724756141854)
+@@ -1,4 +1,25 @@
+ package HomeTask;
+-
++import java.util.Scanner;
+ public class task4 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть шестизначне число:");
++        String number = scanner.nextLine();
++
++        if (number.length() != 6) {
++            System.out.println("Помилка: введено не шестизначне число.");
++        } else {
++            char[] digits = number.toCharArray();
++            char temp1 = digits[0];
++            char temp2 = digits[1];
++
++            digits[0] = digits[5];
++            digits[1] = digits[4];
++            digits[5] = temp1;
++            digits[4] = temp2;
++
++            System.out.println("Змінене число: " + new String(digits));
++        }
++    }
+ }
+Index: src/HomeTask/task9.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task9 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task9.java b/src/HomeTask/task9.java
+--- a/src/HomeTask/task9.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task9.java	(date 1724756325913)
+@@ -1,4 +1,33 @@
+ package HomeTask;
++import java.util.Random;
+ 
+ public class task9 {
++    public static void main(String[] args) {
++        Random random = new Random();
++        int[] array = new int[10];
++
++        int min = Integer.MAX_VALUE;
++        int max = Integer.MIN_VALUE;
++        int positiveCount = 0;
++        int negativeCount = 0;
++        int zeroCount = 0;
++
++        System.out.println("Масив:");
++        for (int i = 0; i < array.length; i++) {
++            array[i] = random.nextInt(21) - 10;
++            System.out.print(array[i] + " ");
++
++            if (array[i] > max) max = array[i];
++            if (array[i] < min) min = array[i];
++            if (array[i] > 0) positiveCount++;
++            if (array[i] < 0) negativeCount++;
++            if (array[i] == 0) zeroCount++;
++        }
++
++        System.out.println("\nМінімальне значення: " + min);
++        System.out.println("Максимальне значення: " + max);
++        System.out.println("Кількість позитивних: " + positiveCount);
++        System.out.println("Кількість негативних: " + negativeCount);
++        System.out.println("Кількість нулів: " + zeroCount);
++    }
+ }
+Index: src/HomeTask/task10.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task10 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task10.java b/src/HomeTask/task10.java
+--- a/src/HomeTask/task10.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task10.java	(date 1724756368735)
+@@ -1,4 +1,38 @@
+ package HomeTask;
++import java.util.ArrayList;
++import java.util.Random;
+ 
+ public class task10 {
++    public static void main(String[] args) {
++        Random random = new Random();
++        int[] array = new int[10];
++
++        ArrayList<Integer> evenNumbers = new ArrayList<>();
++        ArrayList<Integer> oddNumbers = new ArrayList<>();
++        ArrayList<Integer> positiveNumbers = new ArrayList<>();
++        ArrayList<Integer> negativeNumbers = new ArrayList<>();
++
++        System.out.println("Масив:");
++        for (int i = 0; i < array.length; i++) {
++            array[i] = random.nextInt(21) - 10;
++            System.out.print(array[i] + " ");
++
++            if (array[i] % 2 == 0) {
++                evenNumbers.add(array[i]);
++            } else {
++                oddNumbers.add(array[i]);
++            }
++
++            if (array[i] > 0) {
++                positiveNumbers.add(array[i]);
++            } else if (array[i] < 0) {
++                negativeNumbers.add(array[i]);
++            }
++        }
++
++        System.out.println("\nПарні числа: " + evenNumbers);
++        System.out.println("Непарні числа: " + oddNumbers);
++        System.out.println("Позитивні числа: " + positiveNumbers);
++        System.out.println("Негативні числа: " + negativeNumbers);
++    }
+ }
+Index: src/HomeTask/task7.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task7 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task7.java b/src/HomeTask/task7.java
+--- a/src/HomeTask/task7.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task7.java	(date 1724756270448)
+@@ -1,4 +1,27 @@
+ package HomeTask;
++import java.util.Scanner;
+ 
+ public class task7 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть перше число:");
++        int first = scanner.nextInt();
++
++        System.out.println("Введіть друге число:");
++        int second = scanner.nextInt();
++
++        if (first > second) {
++            int temp = first;
++            first = second;
++            second = temp;
++        }
++
++        System.out.println("Непарні числа в діапазоні від " + first + " до " + second + ":");
++        for (int i = first; i <= second; i++) {
++            if (i % 2 != 0) {
++                System.out.println(i);
++            }
++        }
++    }
+ }
+Index: src/HomeTask/task8.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task8 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task8.java b/src/HomeTask/task8.java
+--- a/src/HomeTask/task8.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task8.java	(date 1724756291417)
+@@ -1,4 +1,21 @@
+ package HomeTask;
++import java.util.Scanner;
+ 
+ public class task8 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть початкове число:");
++        int start = scanner.nextInt();
++
++        System.out.println("Введіть кінцеве число:");
++        int end = scanner.nextInt();
++
++        for (int i = start; i <= end; i++) {
++            for (int j = 1; j <= 10; j++) {
++                System.out.print(i + "*" + j + " = " + (i * j) + " ");
++            }
++            System.out.println();
++        }
++    }
+ }
+Index: src/HomeTask/task11.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task11 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task11.java b/src/HomeTask/task11.java
+--- a/src/HomeTask/task11.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task11.java	(date 1724756398472)
+@@ -1,4 +1,33 @@
+ package HomeTask;
++import java.util.Scanner;
+ 
+ public class task11 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть довжину лінії:");
++        int length = scanner.nextInt();
++
++        System.out.println("Оберіть напрямок (1 - горизонтально, 2 - вертикально):");
++        int direction = scanner.nextInt();
++
++        System.out.println("Введіть символ:");
++        char symbol = scanner.next().charAt(0);
++
++        drawLine(length, direction, symbol);
++    }
++
++    public static void drawLine(int length, int direction, char symbol) {
++        if (direction == 1) {
++            for (int i = 0; i < length; i++) {
++                System.out.print(symbol);
++            }
++        } else if (direction == 2) {
++            for (int i = 0; i < length; i++) {
++                System.out.println(symbol);
++            }
++        } else {
++            System.out.println("Помилка: невірний напрямок.");
++        }
++    }
+ }
+Index: src/HomeTask/task12.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task12 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task12.java b/src/HomeTask/task12.java
+--- a/src/HomeTask/task12.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task12.java	(date 1724756421207)
+@@ -1,4 +1,35 @@
+ package HomeTask;
++import java.util.Arrays;
++import java.util.Scanner;
++
+ 
+ public class task12 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        int[] array = {5, 3, 8, 6, 2, 7, 4, 1};
++        System.out.println("Початковий масив: " + Arrays.toString(array));
++
++        System.out.println("Оберіть спосіб сортування (1 - за зростанням, 2 - за спаданням):");
++        int choice = scanner.nextInt();
++
++        sortArray(array, choice);
++
++        System.out.println("Відсортований масив: " + Arrays.toString(array));
++    }
++
++    public static void sortArray(int[] array, int choice) {
++        if (choice == 1) {
++            Arrays.sort(array);
++        } else if (choice == 2) {
++            Arrays.sort(array);
++            for (int i = 0; i < array.length / 2; i++) {
++                int temp = array[i];
++                array[i] = array[array.length - i - 1];
++                array[array.length - i - 1] = temp;
++            }
++        } else {
++            System.out.println("Помилка: невірний вибір.");
++        }
++    }
+ }
+Index: src/HomeTask/task2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task2 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task2.java b/src/HomeTask/task2.java
+--- a/src/HomeTask/task2.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task2.java	(date 1724756113828)
+@@ -1,4 +1,18 @@
+ package HomeTask;
++import java.util.Scanner;
++
+ 
+ public class task2 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть число:");
++        double value = scanner.nextDouble();
++
++        System.out.println("Введіть відсоток:");
++        double percentage = scanner.nextDouble();
++
++        double result = (value * percentage) / 100;
++        System.out.println(percentage + "% від " + value + " = " + result);
++    }
+ }
+Index: src/HomeTask/task3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package HomeTask;\r\n\r\npublic class task3 {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HomeTask/task3.java b/src/HomeTask/task3.java
+--- a/src/HomeTask/task3.java	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/src/HomeTask/task3.java	(date 1724756128590)
+@@ -1,4 +1,20 @@
+ package HomeTask;
++import java.util.Scanner;
+ 
+ public class task3 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Введіть першу цифру:");
++        int firstDigit = scanner.nextInt();
++
++        System.out.println("Введіть другу цифру:");
++        int secondDigit = scanner.nextInt();
++
++        System.out.println("Введіть третю цифру:");
++        int thirdDigit = scanner.nextInt();
++
++        int number = firstDigit * 100 + secondDigit * 10 + thirdDigit;
++        System.out.println("Отримане число: " + number);
++    }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5ab35c43-f71d-4770-813a-ad4ce47a8a63\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 7\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2lElmbKg7tAyrm4KMO2VlNr71q5\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"onboarding.tips.debug.path\": \"D:/visual studio projects/java/HomeWork_java_1/src/Main.java\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5ab35c43-f71d-4770-813a-ad4ce47a8a63\" name=\"Changes\" comment=\"\" />\r\n      <created>1724753280252</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1724753280252</updated>\r\n      <workItem from=\"1724753281598\" duration=\"9000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\r\n          <line>11</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d283ac2f6f2a0ce8374cfc4428ad3459bc743462)
++++ b/.idea/workspace.xml	(date 1724756536414)
+@@ -1,29 +1,72 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="5ab35c43-f71d-4770-813a-ad4ce47a8a63" name="Changes" comment="" />
++    <list default="true" id="5ab35c43-f71d-4770-813a-ad4ce47a8a63" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task1.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task10.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task11.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task12.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task2.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task3.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task4.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task5.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task6.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task7.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task8.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HomeTask/task9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask/task9.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "Fazan4ik"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/Fazan4ik/HomeWork_java_1.git",
++    "accountId": "505da9d2-f64a-4938-8ba4-26b30d4f5184"
++  }
++}]]></component>
+   <component name="ProjectColorInfo"><![CDATA[{
+   "associatedIndex": 7
+ }]]></component>
+   <component name="ProjectId" id="2lElmbKg7tAyrm4KMO2VlNr71q5" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "Application.task1.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "git-widget-placeholder": "master",
+     "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+     "onboarding.tips.debug.path": "D:/visual studio projects/java/HomeWork_java_1/src/Main.java",
+     "vue.rearranger.settings.migration": "true"
+@@ -45,12 +88,23 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1724753280252</updated>
+-      <workItem from="1724753281598" duration="9000" />
++      <workItem from="1724753281598" duration="1949000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
