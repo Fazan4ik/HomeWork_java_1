@@ -4,7 +4,7 @@ public class task5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть номер місяця (1-12):");
+        System.out.print("Введіть номер місяця (1-12): ");
         int month = scanner.nextInt();
 
         if (month < 1 || month > 12) {

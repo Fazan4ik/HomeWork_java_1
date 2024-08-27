@@ -12,7 +12,7 @@ public class task10 {
         ArrayList<Integer> positiveNumbers = new ArrayList<>();
         ArrayList<Integer> negativeNumbers = new ArrayList<>();
 
-        System.out.println("Масив:");
+        System.out.print("Масив: ");
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(21) - 10;
             System.out.print(array[i] + " ");

@@ -5,10 +5,10 @@ public class task6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть кількість метрів:");
+        System.out.print("Введіть кількість метрів: ");
         double meters = scanner.nextDouble();
 
-        System.out.println("Оберіть одиницю виміру (1 - милі, 2 - дюйми, 3 - ярди):");
+        System.out.print("Оберіть одиницю виміру (1 - милі, 2 - дюйми, 3 - ярди): ");
         int choice = scanner.nextInt();
 
         switch (choice) {

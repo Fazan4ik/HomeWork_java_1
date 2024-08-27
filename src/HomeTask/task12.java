@@ -10,12 +10,12 @@ public class task12 {
         int[] array = {5, 3, 8, 6, 2, 7, 4, 1};
         System.out.println("Початковий масив: " + Arrays.toString(array));
 
-        System.out.println("Оберіть спосіб сортування (1 - за зростанням, 2 - за спаданням):");
+        System.out.print("Оберіть спосіб сортування (1 - за зростанням, 2 - за спаданням): ");
         int choice = scanner.nextInt();
 
         sortArray(array, choice);
 
-        System.out.println("Відсортований масив: " + Arrays.toString(array));
+        System.out.print("Відсортований масив: " + Arrays.toString(array) );
     }
 
     public static void sortArray(int[] array, int choice) {

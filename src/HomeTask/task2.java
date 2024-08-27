@@ -6,10 +6,10 @@ public class task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть число:");
+        System.out.print("Введіть число: ");
         double value = scanner.nextDouble();
 
-        System.out.println("Введіть відсоток:");
+        System.out.print("Введіть відсоток: ");
         double percentage = scanner.nextDouble();
 
         double result = (value * percentage) / 100;

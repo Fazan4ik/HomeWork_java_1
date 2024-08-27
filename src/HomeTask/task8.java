@@ -5,10 +5,10 @@ public class task8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть початкове число:");
+        System.out.print("Введіть початкове число: ");
         int start = scanner.nextInt();
 
-        System.out.println("Введіть кінцеве число:");
+        System.out.print("Введіть кінцеве число: ");
         int end = scanner.nextInt();
 
         for (int i = start; i <= end; i++) {

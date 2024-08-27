@@ -4,7 +4,7 @@ public class task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть шестизначне число:");
+        System.out.print("Введіть шестизначне число: ");
         String number = scanner.nextLine();
 
         if (number.length() != 6) {
